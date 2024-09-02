@@ -1,0 +1,124 @@
+.full-screen-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+}
+.homeBanner {
+  position: relative;
+}
+.homeBanner .slick-prev {
+  left: inherit !important;
+  z-index: 11;
+  right: 200px !important;
+  top: inherit;
+  bottom: 30%;
+}
+.homeBanner .slick-next {
+  right: 100px !important;
+  top: inherit;
+  bottom: 30%;
+}
+.homeBanner .slick-next:before {
+  background: url(../../../../public/images/banner/bannerArrow.svg) no-repeat;
+  height: 84px;
+  width: 84px;
+  content: "";
+  display: block;
+}
+.homeBanner .slick-prev:before {
+  background: url(../../../../public/images/banner/bannerArrow.svg) no-repeat;
+  height: 84px;
+  width: 84px;
+  content: "";
+  display: block;
+  transform: rotate(180deg);
+}
+.homeBanner .slick-initialized .slick-slide {
+  position: relative;
+}
+.bannerInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  color: #fff;
+  width: 96%;
+  right: 0;
+  margin: auto;
+  height: 100vh;
+  padding-top: 10%;
+}
+.bannerInfo h1 {
+  font-size: 173px;
+  line-height: 150px;
+  font-family: "richmond-display", sans-serif;
+  font-weight: 300;
+}
+.bannerInfo .tl1 {
+  font-family: "richmond-display", sans-serif;
+  font-style: italic;
+}
+.bdrWrap {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255);
+  z-index: 9;
+}
+.bdrWrap::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 50%;
+  height: 4px;
+  background: #fff;
+  transition: width 0.5s;
+}
+
+@media screen and (min-width: 1600px) {
+  .bannerInfo h1 {
+    font-size: 173px;
+    line-height: 180px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  .homeBanner .slick-prev {
+    bottom: 22%;
+  }
+  .homeBanner .slick-next {
+    bottom: 22%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bannerInfo h1 {
+    font-size: 72px;
+    line-height: 76px;
+    padding-bottom: 20px;
+  }
+  .bannerInfo {
+    padding-top: 67%;
+  }
+  .homeBanner .slick-next {
+    right: 50px !important;
+    bottom: 27%;
+  }
+  .homeBanner .slick-next:before {
+    width: 50px;
+    height: 50px;
+    background-size: 100%;
+  }
+  .homeBanner .slick-prev {
+    right: 110px !important;
+    bottom: 27%;
+  }
+  .homeBanner .slick-prev:before {
+    width: 50px;
+    height: 50px;
+    background-size: 100%;
+  }
+}
