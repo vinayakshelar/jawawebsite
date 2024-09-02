@@ -8,7 +8,7 @@ export default function Home() {
     <main className="">
       <Header />
       <Banner />
-      <Exhibit index={0} value={0} />
+      <Exhibit />
     </main>
   );
 }
