@@ -1,0 +1,22 @@
+.wrapAccessories .slick-arrow {
+  display: none !important;
+}
+.wrapAccessories .slick-initialized .slick-slide {
+  padding: 0 20px;
+}
+.wrapAccessories .tl1 {
+  font-family: "richmond-display", sans-serif;
+  font-style: italic;
+}
+
+@media screen and (min-width: 1400px) {
+  .wrapAccessories h2 {
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .wrapAccessories h2 {
+    font-size: 70px;
+  }
+}

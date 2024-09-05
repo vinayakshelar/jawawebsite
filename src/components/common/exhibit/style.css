@@ -85,6 +85,10 @@
   .wrapExhibit h2 {
     line-height: 52px;
   }
+  .exhibitHeader {
+    border: 0;
+    width: 200px;
+  }
   .exhibitHeader .MuiFormControl-root {
     background: transparent;
     border-radius: 50px;

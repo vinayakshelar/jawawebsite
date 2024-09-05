@@ -1,0 +1,11 @@
+.wraplegacySection .tl1 {
+  font-family: "richmond-display", sans-serif;
+  font-style: italic;
+}
+
+@media screen and (max-width: 1400px) {
+  .wraplegacySection h1,
+  .wraplegacySection h2 {
+    font-size: 70px;
+  }
+}

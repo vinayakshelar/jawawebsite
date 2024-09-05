@@ -4,7 +4,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import "./style.css";
 
 function Banner() {
@@ -34,13 +34,7 @@ function Banner() {
                             <div className='bdrWrap mt-5'></div>
                             <div className='ftBanner flex mt-5 justify-between'>
                                 <h4 className='font-SourceSerifProRegular text-[24px] md:text-[45px]'>Timeless and Iconic, Crafted With Finesse.</h4>
-                                <button className='flex gap-2 items-center justify-center pr-2'>Explore <Image
-                                    src="/images/banner/exploreArrow.svg"
-                                    alt=""
-                                    width={24}
-                                    height={24}
-                                    className=""
-                                /></button>
+                                <button className='flex gap-2 items-center justify-center pr-2'>Explore <ArrowDownwardIcon /></button>
                             </div>
                         </div>
                     </div>

@@ -14,6 +14,18 @@ const NeoClassic = () => {
         slidesToShow: 3,
         speed: 500,
         gap: 50,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    gap: 100,
+                    centerPadding: "10px",
+
+                }
+            },
+        ]
     };
     return (
         <>

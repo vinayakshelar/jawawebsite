@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { ChevronDown, X } from 'lucide-react';
 import Image from "next/image";
+import "./style.css";
 
 export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -41,7 +42,7 @@ export default function Header() {
             <div className="">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center py-4">
-                        <nav className={`md:flex space-x-12 ${isMobileMenuOpen ? 'block' : 'hidden'} 
+                        <nav className={`md:flex space-x-12 mobileMenu ${isMobileMenuOpen ? 'block' : 'hidden'} 
                             md:relative absolute md:top-auto top-0 md:left-auto left-0 md:right-auto right-0 
                             md:h-auto h-screen md:bg-transparent bg-white md:z-auto z-50`}>
                             <button
@@ -50,7 +51,7 @@ export default function Header() {
                             >
                                 <X size={24} />
                             </button>
-                            <div className="relative">
+                            <div className="relative pt-8 md:pt-0">
                                 <button
                                     onClick={toggleMoreMenu}
                                     className="text-[20px] md:text-[#fff] text-gray-800 hover:text-[#ccc] font-NeueHaasDisplayMediu tracking-[4%] flex items-center"
