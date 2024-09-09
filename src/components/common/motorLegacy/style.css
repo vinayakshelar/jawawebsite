@@ -3,9 +3,15 @@
   font-style: italic;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1600px) {
   .wraplegacySection h1,
   .wraplegacySection h2 {
     font-size: 70px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wraplegacySection h1,
+  .wraplegacySection h2 {
+    font-size: 40px;
   }
 }

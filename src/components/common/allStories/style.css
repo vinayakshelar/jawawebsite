@@ -49,3 +49,10 @@
 .allStories .slick-initialized .slick-slide {
   padding: 0 10px;
 }
+
+@media screen and (max-width: 767px) {
+  .allStories .slick-next,
+  .allStories .slick-prev {
+    display: none !important;
+  }
+}

@@ -29,8 +29,45 @@ const AllExhibit = () => {
     };
     return (
         <>
-            <div className="slider-container pt-8 pb-4">
+            <div className="slider-container pt-6 pb-4">
                 <Slider {...settings}>
+                    <div>
+                        <div className='text-center'>
+                            <Image
+                                src="/images/exhibit-slider/img1a.png"
+                                alt=""
+                                width={306}
+                                height={69}
+                                className=""
+                            />
+                        </div>
+                        <Image
+                            src="/images/exhibit-slider/img1.png"
+                            alt=""
+                            width={368}
+                            height={250}
+                            className=""
+                        />
+
+                    </div>
+                    <div>
+                        <Image
+                            src="/images/exhibit-slider/img2.png"
+                            alt=""
+                            width={368}
+                            height={250}
+                            className=""
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            src="/images/exhibit-slider/img3.png"
+                            alt=""
+                            width={368}
+                            height={250}
+                            className=""
+                        />
+                    </div>
                     <div>
                         <Image
                             src="/images/exhibit-slider/img1.png"
@@ -51,34 +88,7 @@ const AllExhibit = () => {
                     </div>
                     <div>
                         <Image
-                            src="/images/exhibit-slider/img1.png"
-                            alt=""
-                            width={368}
-                            height={250}
-                            className=""
-                        />
-                    </div>
-                    <div>
-                        <Image
-                            src="/images/exhibit-slider/img1.png"
-                            alt=""
-                            width={368}
-                            height={250}
-                            className=""
-                        />
-                    </div>
-                    <div>
-                        <Image
-                            src="/images/exhibit-slider/img1.png"
-                            alt=""
-                            width={368}
-                            height={250}
-                            className=""
-                        />
-                    </div>
-                    <div>
-                        <Image
-                            src="/images/exhibit-slider/img1.png"
+                            src="/images/exhibit-slider/img3.png"
                             alt=""
                             width={368}
                             height={250}

@@ -12,19 +12,28 @@ const AllStories = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
 
     };
     return (
         <div className='bg-[#000] allStories'>
             <div className='p-8'>
-                <div className='flex justify-between items-center'>
-                    <h1 className='font-SourceSerifProRegular text-[45px] text-[#fff] leading-[58px]'>Catch the latest Jawa Yezdi news on<br /> new models, reviews, and events.</h1>
-                    <button className='text-[#fff]'>View All Stories <ArrowDownwardIcon /></button>
+                <div className='block md:flex justify-between items-center'>
+                    <h1 className='font-SourceSerifProRegular text-[24px] md:text-[45px] text-[#fff] leading-[28px] md:leading-[58px]'>Catch the latest Jawa Yezdi news on<br /> new models, reviews, and events.</h1>
+                    <button className='text-[#fff] md:mt-[0] mt-[20px]'>View All Stories <ArrowDownwardIcon /></button>
                 </div>
                 <div className='bdrWrap mt-5'></div>
-                <div className='w-[100%] flex justify-end text-right pt-6 '>
-                    <div className="slider-container w-[80%]">
+                <div className='w-[100%] flex md:justify-end md:text-right justify-start text-left pt-6 '>
+                    <div className="slider-container w-[100%] md:w-[80%]">
                         <Slider {...settings}>
                             <div>
                                 <Image

@@ -54,7 +54,7 @@ export default function Header() {
                             <div className="relative pt-8 md:pt-0">
                                 <button
                                     onClick={toggleMoreMenu}
-                                    className="text-[20px] md:text-[#fff] text-gray-800 hover:text-[#ccc] font-NeueHaasDisplayMediu tracking-[4%] flex items-center"
+                                    className="text-[20px] md:text-[#fff] text-gray-800 hover:text-[#ccc] font-NeueHaasDisplayMediu tracking-wider flex items-center"
                                 >
                                     Motorcycles <ChevronDown className="ml-1" size={20} />
                                 </button>
@@ -73,7 +73,7 @@ export default function Header() {
                                 )}
                             </div>
                             {menuItems.map((item) => (
-                                <a key={item.label} href={item.href} className="block md:inline text-[20px] md:text-[#fff] text-gray-800 hover:text-[#ccc] font-NeueHaasDisplayMediu tracking-[4%]">
+                                <a key={item.label} href={item.href} className="block md:inline text-[20px] md:text-[#fff] text-gray-800 hover:text-[#ccc] font-NeueHaasDisplayMediu tracking-wider">
                                     {item.label}
                                 </a>
                             ))}
@@ -90,7 +90,7 @@ export default function Header() {
                         alt=""
                     />
                 </button>
-                <div><button className='hidden md:flex border border-white rounded-[50px] px-[20px] py-[15px] text-[20px] text-[#fff]'>Book Online</button></div>
+                <div><button className='hidden md:flex border border-white rounded-[50px] px-[20px] py-[15px] text-[20px] text-[#fff] tracking-wider'>Book Online</button></div>
             </div>
         </header>
     );

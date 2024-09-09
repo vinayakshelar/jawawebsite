@@ -77,13 +77,23 @@
   transition: width 0.5s;
 }
 
-.wrapExhibit h2 {
-  line-height: 130px;
+@media screen and (min-width: 1600px) {
+  .wrapExhibit h2 {
+    font-size: 126px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .wrapExhibit h2 {
+    font-size: 80px;
+    line-height: 90px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .wrapExhibit h2 {
-    line-height: 52px;
+    font-size: 40px;
+    line-height: 48px;
   }
   .exhibitHeader {
     border: 0;

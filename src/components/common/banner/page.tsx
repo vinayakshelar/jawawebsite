@@ -27,8 +27,8 @@ function Banner() {
                         className="full-screen-image"
                     />
                     <div className='bannerInfo'>
-                        <span className='text-[28px] tl1'>JAWA 350</span>
-                        <h1 className=''>Legendary<br />Masterpiece </h1>
+                        <span className='tl1'>JAWA 350</span>
+                        <h1><span className='italic'>Legendary</span><br />Masterpiece </h1>
                         <button className='border border-white rounded-[50px] text-[20px] px-[20px] py-[10px]'>Book a Test Ride</button>
                         <div className='absolute bottom-0 w-[100%]'>
                             <div className='bdrWrap mt-5'></div>

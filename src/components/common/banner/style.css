@@ -49,23 +49,14 @@
   height: 100vh;
   padding-top: 10%;
 }
-.bannerInfo h1 {
-  font-size: 173px;
-  line-height: 150px;
-  font-family: "richmond-display", sans-serif;
-  font-weight: 300;
-}
-.bannerInfo .tl1 {
-  font-family: "richmond-display", sans-serif;
-  font-style: italic;
-}
+
 .bdrWrap {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 2px;
-  background: rgba(255, 255, 255);
+  background: rgba(255, 255, 255, 0.7);
   z-index: 9;
 }
 .bdrWrap::after {
@@ -80,17 +71,40 @@
 }
 
 @media screen and (min-width: 1600px) {
+  .bannerInfo .tl1 {
+    font-family: "richmond-display", sans-serif;
+    font-style: italic;
+    font-size: 28px;
+  }
   .bannerInfo h1 {
-    font-size: 173px;
-    line-height: 180px;
     padding-bottom: 25px;
     padding-top: 25px;
+    font-size: 173px;
+    line-height: 180px;
+    font-family: "richmond-display", sans-serif;
+    font-weight: 300;
   }
   .homeBanner .slick-prev {
     bottom: 22%;
   }
   .homeBanner .slick-next {
     bottom: 22%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .bannerInfo .tl1 {
+    font-family: "richmond-display", sans-serif;
+    font-style: italic;
+    font-size: 24px;
+  }
+  .bannerInfo h1 {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-size: 124px;
+    line-height: 130px;
+    font-family: "richmond-display", sans-serif;
+    font-weight: 300;
   }
 }
 
@@ -105,7 +119,7 @@
   }
   .homeBanner .slick-next {
     right: 50px !important;
-    bottom: 27%;
+    bottom: 24%;
   }
   .homeBanner .slick-next:before {
     width: 50px;
@@ -114,7 +128,7 @@
   }
   .homeBanner .slick-prev {
     right: 110px !important;
-    bottom: 27%;
+    bottom: 24%;
   }
   .homeBanner .slick-prev:before {
     width: 50px;

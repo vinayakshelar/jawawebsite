@@ -82,7 +82,7 @@ const Exhibit = () => {
         <div className='pt-[50px] wrapExhibit'>
             <h3 className='text-[18px] md:text-[24px] font-SourceSerifProRegular text-[#fff] flex justify-center text-center'>A Fusion of Heritage and Innovation</h3>
             <h2 className='text-[#fff] flex justify-center text-center text-[40px] md:text-[126px]'>Exhibit of Excellence</h2>
-            <Box sx={{ width: '100%', marginTop: { xs: '20px', md: '120px', }, }}>
+            <Box sx={{ width: '100%', marginTop: { xs: '20px', md: '80px', }, }}>
                 <Box className='exhibitHeader' sx={{ borderBottom: 1, borderColor: '#5F5F5F', justifyContent: 'center', textAlign: 'center', width: '80%', margin: 'auto' }}>
                     {isMobile ? (
                         <FormControl fullWidth>

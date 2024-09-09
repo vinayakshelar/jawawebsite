@@ -3,9 +3,26 @@
   font-style: italic;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1600px) {
   .wraplegacySection h1,
   .wraplegacySection h2 {
-    font-size: 70px;
+    font-size: 93px;
+    line-height: 98px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .wraplegacySection h1,
+  .wraplegacySection h2 {
+    font-size: 73px;
+    line-height: 78px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wraplegacySection h1,
+  .wraplegacySection h2 {
+    font-size: 40px;
+    line-height: 48px;
   }
 }
